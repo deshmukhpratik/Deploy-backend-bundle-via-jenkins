@@ -1,0 +1,3 @@
+sudo curl -u admin:${Shaft_Password}  -F action=uninstall http://172.27.16.52:${PORT}/system/console/bundles/project.jar
+sudo curl -u admin:${Shaft_Password}  -F action=install -F bundlestartlevel=20 -F bundlefile=@./target/project.jar http://172.27.16.52:${PORT}/system/console/bundles
+sudo curl -u admin:${Shaft_Password}  -F action=start http://172.27.16.52:${PORT}/system/console/bundles/project.jar
